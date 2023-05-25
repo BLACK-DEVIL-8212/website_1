@@ -29,6 +29,42 @@
                 background-size: cover;
             }
         }
+
+        /* Styles for all devices */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Styles specific to Android devices */
+@media only screen and (min-width: 360px) and (min-height: 640px) {
+  body {
+    background-color: #00ff00; /* Green background color */
+    color: #ffffff; /* White text color */
+  }
+}
+
+/* Additional styles for large screens */
+@media only screen and (min-width: 600px) and (min-height: 1024px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+/* Additional styles for normal screens */
+@media only screen and (min-width: 480px) and (min-height: 800px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Additional styles for small screens */
+@media only screen and (max-width: 479px) and (max-height: 799px) {
+  body {
+    font-size: 14px;
+  }
+}
+
         
         *{
             background-image: none;
