@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE DEVIL'S ROOM | Signup</title>
+  <style>
+        @media (max-width:768px) {
+            box{
+                display:auto;
+                -webkit-region-fragment: inherit;
+                -o-border-image: round;
+                -webkit-animation-duration: 20ms;
+                background-image: url("img/4259666173_8ac9642dcc_c.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        @media (max-width:768px),(min-width:999px){
+            box{
+                display:auto;
+                -webkit-region-fragment: inherit;
+                -o-border-image: round;
+                -webkit-animation-duration: 20ms;
+                background-image: url("img/4259666173_8ac9642dcc_c.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        
+        *{
+            background-image: none;
+            background-origin: border-box;
+            border: none;
+        }
+
+        body{
+            background-image: url("img/4259666173_8ac9642dcc_c.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+          width: 500px;
+          color: aqua;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        h1 {
+          font-size: 36px;
+          margin-bottom: 20px;
+        }
+
+        .form-group {
+          margin-bottom: 20px;
+        }
+
+        label {
+          display: block;
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+          border: 3px solid;
+          border-radius: 20in;
+          border-color: aqua;
+        }
+
+        .btn {
+          padding: 10px 20px;
+          font-size: 18px;
+          background-color: #4CAF50;
+          color: #fff;
+          border-radius: 20inc;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+          background-color: #3e8e41;
+        }
+
+  </style>
+  <script>
+    // Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the form element
+  var signupForm = document.querySelector('form');
+
+  // Add submit event listener to the form
+  signupForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get the input values
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+
+    // Perform form validation (example validation logic)
+    if (name.trim() === '') {
+      alert('Please enter your name.');
+      return;
+    }
+
+    if (email.trim() === '') {
+      alert('Please enter your email.');
+      return;
+    }
+
+    if (password.trim() === '') {
+      alert('Please enter a password.');
+      return;
+    }
+
+    // Display the submitted values (example)
+    alert('Name: ' + name + '\nEmail: ' + email + '\nPassword: ' + password);
+
+    // Clear the form inputs
+    signupForm.reset();
+  });
+});
+
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Signup Form</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn">Sign Up</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

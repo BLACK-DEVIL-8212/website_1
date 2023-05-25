@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE DEVIL'S ROOM | LOGIN</title>
+    <style>
+        @media (max-width:768px) {
+            box{
+                display:auto;
+                -webkit-region-fragment: inherit;
+                -o-border-image: round;
+                -webkit-animation-duration: 20ms;
+                background-image: url("img/191842443-destruction-of-planets-concept-art-illustration-background-image.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        @media (max-width:768px),(min-width:999px){
+            box{
+                display:auto;
+                -webkit-region-fragment: inherit;
+                -o-border-image: round;
+                -webkit-animation-duration: 20ms;
+                background-image: url("img/4259666173_8ac9642dcc_c.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        
+        *{
+            background-image: none;
+            background-origin: border-box;
+            border: none;
+        }
+
+        body{
+            background-image: url("img/4259666173_8ac9642dcc_c.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container{
+            position: absolute;
+            top:40%;
+            left: 45%;
+            background-color: black;
+            color: aqua;
+            margin: auto;
+            border: 2px solid orange;
+        }
+
+        .logbtn {
+            top: 2%;
+        }
+
+        .container::shadow{
+            shape-image-threshold: inherit;
+            shape-outside: margin-box;
+        }
+
+        input {
+            border: 3px solid;
+            border-radius: 20in;
+            border-color: aqua;
+        }
+        
+        button {
+            border: 3px solid;
+            border-radius: 20in;
+            border-color: aqua;
+            position: center;
+            padding-left: 2%;
+        }
+
+        header h1{
+            padding: 0;
+            top:15%;
+            left:116%;
+            position:absolute;
+            text: 50px solid rgb(75, 13, 13) center;
+        }
+
+        .container::shadow{
+            shape-image-threshold: inherit;
+            shape-outside: margin-box;
+        }
+    </style>
+    <link rel="html/stylesheet" href="/preloader.css">
+    <script type="javascript" src="/js_files/loginjs.js"></script>
+    <script>
+        // Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the login button element
+    var loginButton = document.getElementById('login');
+    
+    // Add click event listener to the login button
+    loginButton.addEventListener('click', function() {
+      // Get the username and password input values
+      var username = document.getElementById('uname').value;
+      var password = document.getElementById('password').value;
+      
+      // Perform validation (example validation logic)
+      if (username === 'admin' && password === 'password') {
+        // Successful login
+        alert('Login successful!');
+      } else {
+        // Invalid credentials
+        alert('Invalid username or password!');
+      }
+    });
+  });
+  
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="container_1">
+        <div class="loginbox">
+            <div class="username"><p>Username :</p><input type="text" name="username" id="uname" /></div>
+            <div class="passwd"><p>Password :</p><input type="password" name="password" size="8" minlength="8" maxlength="12" id="password"/></div>
+        </div>
+        <div class="logbtn"><input type="submit" value="login" id =login><button id="signup">Signup</button></div>
+    </div>
+</body>
+</html>
